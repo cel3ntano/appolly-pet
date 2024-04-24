@@ -1,3 +1,108 @@
 <section class="about">
-  <p>About (Andrew)</p>
+  <div class="container">
+    <h2 class="app-about-title">About our app</h2>
+    <p class="app-about-text mobile">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante
+      velit vitae.
+    </p>
+    <p class="app-about-text tablet">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante
+      velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam
+      tincidunt rhoncus.
+    </p>
+    <p class="app-about-text desktop">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante
+      velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam
+      tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc
+      libero urna, feugiat.
+    </p>
+    <div class="app-about-wrapper">
+      <div class="app-about-img-wrap">
+        <picture class="app-about-img">
+          <source
+            media="(min-width:1440px)"
+            srcset="
+              ./img/app-about/about-app-desktop.png    1x,
+              ./img/app-about/about-app-desktop@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width:1439px)"
+            srcset="
+              ./img/app-about/about-app-mob.png    1x,
+              ./img/app-about/about-app-mob@2x.png 2x
+            "
+          />
+          <img
+            class="app-about-img"
+            src="./img/app-about/about-app-mob.png1"
+            alt="app 3d image"
+          />
+        </picture>
+        <div class="app-about-ellipse"></div>
+      </div>
+      <ul class="app-about-list">
+        <li class="app-about-list-item">
+          <svg class="app-about-list-item-icon">
+            <use
+              href="./img/icons.svg#about-list-item-icon"
+              width="24"
+              height="24"
+            ></use>
+          </svg>
+          <div class="app-about-item-wrap">
+            <h3 class="app-about-list-item-title">Creative design</h3>
+            <p class="app-about-list-item-descr mobile">
+              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+            </p>
+            <p class="app-about-list-item-descr desktop">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+            </p>
+          </div>
+        </li>
+        <li class="app-about-list-item">
+          <svg class="app-about-list-item-icon">
+            <use
+              href="./img/icons.svg#about-list-item-icon"
+              width="24"
+              height="24"
+            ></use>
+          </svg>
+          <div class="app-about-item-wrap">
+            <h3 class="app-about-list-item-title">Easy to use</h3>
+            <p class="app-about-list-item-descr mobile">
+              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+            </p>
+            <p class="app-about-list-item-descr desktop">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+            </p>
+          </div>
+        </li>
+        <li class="app-about-list-item">
+          <svg class="app-about-list-item-icon">
+            <use
+              href="./img/icons.svg#about-list-item-icon"
+              width="24"
+              height="24"
+            ></use>
+          </svg>
+          <div class="app-about-item-wrap">
+            <h3 class="app-about-list-item-title">Best user experience</h3>
+            <p class="app-about-list-item-descr mobile">
+              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+            </p>
+            <p class="app-about-list-item-descr desktop">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
