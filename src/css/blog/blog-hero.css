@@ -1,3 +1,96 @@
-.blog-hero {
-  background-color: rgb(210, 255, 192);
+.herob {
+  margin: 0 auto;
+  padding: 165px 0 130px 0;
+  max-width: 375px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: lightgray;
+  background-image: url(/img/blog-hero/heroblog-mob-1x.jpg);
+  position: relative;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .herob {
+    background-image: url(/img/blog-hero/heroblog-mob-2x.jpg);
+  }
+}
+
+.herob-container {
+  text-align: center;
+}
+
+.herob-title {
+  color: #ffffff;
+  font-size: 48.83px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.herob-span {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.herob-span-icon {
+  margin-top: 2px;
+}
+
+.herob-span-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .herob {
+    padding: 234px 0 61px 0;
+    max-width: 768px;
+    background-image: url(/img/blog-hero/heroblog-tab-1x.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .herob {
+      background-image: url(/img/blog-hero/heroblog-tab-2x.jpg);
+    }
+  }
+
+  /* .herob-container {
+  } */
+
+  .herob-span {
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .herob {
+    padding: 220px 0 75px 0;
+    max-width: 1440px;
+    background-image: url(/img/blog-hero/heroblog-desk-1x.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .herob {
+      background-image: url(/img/blog-hero/heroblog-desk-2x.jpg);
+    }
+  }
+  /* 
+  .hero-container {
+  } */
+
+  .herob-span {
+    margin-bottom: 75px;
+  }
 }

@@ -1,3 +1,229 @@
 .hero {
-  background-color: rgb(192, 255, 222);
+  margin: 0 auto;
+  padding: 188px 0 120px 0;
+  max-width: 375px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: lightgray;
+  background-image: url(/img/hero/heromain-mob-1x.jpg);
+  position: relative;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/img/hero/heromain-mob-2x.jpg);
+  }
+}
+
+.hero-container {
+  padding-left: 36px;
+}
+.hero-blueborder {
+  width: 323px;
+  height: 358px;
+  border: 10px solid #7572ff;
+  margin-bottom: 40px;
+}
+.hero-info {
+  position: absolute;
+  top: 208px;
+  left: 16px;
+  background-color: #ffffff;
+  padding: 30px 12px 20px 18px;
+  width: 323px;
+}
+.hero-info-title {
+  height: 71px;
+  color: #5956e9;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.hero-info-text {
+  height: 66px;
+  color: #6c6c72;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.hero-info-text-desk {
+  color: #6c6c72;
+  display: none;
+}
+.hero-info-dwnld {
+  color: #232233;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.hero-photo {
+  /* height: 35px; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+/* .hero-photo-googleplay {
+}
+.hero-photo-applestore {
+} */
+.hero-phone-mob {
+  margin-left: 19px;
+}
+/*.hero-photo-phone {
+   width: 466px;
+  height: 521px;
+  flex-shrink: 0;
+ 
+}*/
+@media (min-width: 768px) {
+  .hero {
+    padding: 380px 0 221px 0;
+    max-width: 768px;
+    background-image: url(/img/hero/heromain-tab-1x.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(/img/hero/heromain-tab-2x.jpg);
+    }
+  }
+
+  .hero-container {
+    padding-left: 56px;
+    display: flex;
+    gap: 55px;
+  }
+
+  .hero-blueborder {
+    width: 375px;
+    height: 381px;
+    margin-top: 34px;
+    border: 18px solid #7572ff;
+    margin-bottom: 0;
+  }
+
+  .hero-info {
+    top: 447px;
+    left: 40px;
+    padding: 14px 7px 14px 18px;
+    width: 356px;
+  }
+
+  .hero-info-title {
+    height: 95px;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 1.51;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .hero-info-text {
+    color: #6c6c72;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 23px;
+  }
+
+  .hero-info-dwnld {
+    color: #232233;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+  }
+
+  .hero-photo {
+    gap: 14px;
+  }
+
+  .hero-phone-mob {
+    margin-left: 0;
+  }
+
+  /* .hero-photo-googleplay {
+  }
+  .hero-photo-applestore {
+  } */
+
+  /* .hero-photo-phone {
+  } */
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    padding: 216px 0 83px 0;
+    max-width: 1440px;
+    background-image: url(/img/hero/heromain-desk-1x.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(/img/hero/heromain-desk-2x.jpg);
+    }
+  }
+
+  .hero-container {
+    padding-left: 185px;
+    gap: 124px;
+  }
+
+  .hero-blueborder {
+    width: 570px;
+    height: 535px;
+    margin-top: 105px;
+    border: 18px solid #7572ff;
+  }
+
+  .hero-info {
+    top: 372px;
+    left: 135px;
+    padding: 40px 23px 39px 30px;
+    width: 570px;
+  }
+
+  .hero-info-title {
+    height: 126px;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  .hero-info-text {
+    height: 66px;
+    color: #6c6c72;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 52px;
+  }
+
+  .hero-info-text-desk {
+    display: block;
+  }
+
+  .hero-info-dwnld {
+    color: #232233;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
 }
