@@ -1,3 +1,257 @@
-.features {
-  background-color: rgb(239, 255, 192);
+.features .container {
+  background: #5956e9;
+  background-image: url(/images/app-features/app-features-background-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .features .container {
+    background-image: url(/images/app-features/app-features-background-mob@2x.jpg);
+  }
+}
+
+.app-features-title {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.app-features-text.tablet,
+.app-features-text.desktop {
+  display: none;
+}
+
+.app-features-text {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.app-features-list-item {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .app-features-list-item:not(:last-child):not(:nth-child(3)) {
+    margin-bottom: 40px;
+  }
+}
+
+.app-features-list-item-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.app-features-list-item-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  margin-top: -5px;
+}
+
+.app-features-list-item-descr {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.app-features-list-item-img {
+  border-radius: 40px;
+}
+
+.app-features-list-item-img {
+  max-width: 214px;
+}
+
+@media screen and (max-width: 767px) {
+  .app-features-list-item-img {
+    margin: 60px auto;
+    box-shadow: 40px 40px 100px 0px rgba(24, 48, 63, 0.5);
+  }
+}
+
+/* =========================== App Features Adaptive ================== */
+
+@media screen and (min-width: 768px) {
+  .features .container {
+    position: relative;
+  }
+
+  .app-features-text.mobile {
+    display: none;
+  }
+
+  .app-features-text.tablet {
+    display: block;
+    max-width: 450px;
+    margin: 0 auto 60px;
+  }
+
+  .app-features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .app-features-list-item {
+    /* outline: 2px solid rgb(184, 215, 13); */
+    /* margin-bottom: 20px; */
+  }
+
+  .app-features-list-item:nth-child(1),
+  .app-features-list-item:nth-last-child(1) {
+    width: 100%;
+  }
+
+  .app-features-list-item:nth-child(1) .app-features-list-item-descr {
+    max-width: 223px;
+    margin: 0 auto;
+  }
+
+  .app-features-list-item:nth-last-child(1) .app-features-list-item-descr {
+    max-width: 297px;
+    margin: 0 auto;
+  }
+
+  .app-features-list-item:nth-child(2),
+  .app-features-list-item:nth-child(3),
+  .app-features-list-item:nth-child(5),
+  .app-features-list-item:nth-child(6) {
+    max-width: 225px;
+  }
+
+  .app-features-list-item:nth-child(1) {
+    margin-bottom: 77px;
+    /* order: 1; */
+    /* chat */
+  }
+  .app-features-list-item:nth-child(2) {
+    margin-bottom: 80px;
+    text-align: right;
+    margin-left: -5px;
+    /* order: 2; */
+    /* features */
+  }
+
+  .app-features-list-item:nth-child(3) {
+    order: 5;
+    text-align: right;
+    margin-left: -5px;
+
+    /* design */
+  }
+  .app-features-list-item:nth-child(4) {
+    order: 4;
+    /* image */
+  }
+  .app-features-list-item:nth-child(5) {
+    margin-bottom: 50px;
+    order: 3;
+    text-align: left;
+    margin-right: -5px;
+    /* version */
+  }
+
+  .app-features-list-item:nth-child(5) .app-features-list-item-icon {
+    margin-left: -10px;
+  }
+
+  .app-features-list-item:nth-child(6) {
+    order: 6;
+    text-align: left;
+    margin-right: -5px;
+
+    /* retina */
+  }
+
+  .app-features-list-item:nth-child(7) {
+    order: 7;
+    /* support */
+    margin-top: 60px;
+  }
+
+  .app-features-list-item:nth-child(4) {
+    width: 100%;
+  }
+
+  .app-features-list-item-img {
+    position: absolute;
+    top: 39%;
+    /* left: 50%; */
+    transform: translate(-50%);
+    box-shadow: 10px 10px 100px 0px rgba(24, 48, 63, 0.3);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .app-features-text.tablet {
+    display: none;
+  }
+
+  .app-features-text.desktop {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto 60px;
+  }
+
+  .app-features-list-item-icon {
+    margin-bottom: 22px;
+  }
+
+  .app-features-list-item-title {
+    font-size: 25px;
+  }
+
+  .app-features-list-item:nth-child(1) {
+    margin-bottom: 120px;
+    /* chat */
+  }
+
+  .app-features-list-item:nth-child(2) {
+    /* margin-bottom: 347px; */
+    /* features */
+  }
+
+  .app-features-list-item:nth-child(5) {
+    margin-bottom: 342px;
+    /* version */
+  }
+
+  .app-features-list-item:nth-child(1) .app-features-list-item-descr {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .app-features-list-item:nth-child(2),
+  .app-features-list-item:nth-child(3),
+  .app-features-list-item:nth-child(5),
+  .app-features-list-item:nth-child(6) {
+    max-width: 325px;
+  }
+
+  .app-features-list-item:nth-child(7) {
+    order: 7;
+    /* support */
+    margin-top: 120px;
+  }
+
+  .app-features-list-item-img {
+    max-width: 375px;
+    top: 32%;
+  }
 }
