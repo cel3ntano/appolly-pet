@@ -10,6 +10,10 @@
   margin-bottom: 15px;
 }
 
+.blog-post-icon-item:first-child {
+  margin-top: 30px;
+}
+
 .blog-post-icon-item:last-child {
   margin-bottom: 58px;
 }
@@ -31,6 +35,14 @@
   font-size: 48.83px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.blog-main-text {
+  margin-bottom: 20px;
+}
+
+.blog-main-text-last {
+  margin-bottom: 30px;
 }
 
 .wrap-decoration-icon {
@@ -82,4 +94,14 @@
 .blog-post-main-text {
   text-align: center;
   color: #fff;
+}
+
+.passage-text-wrap > p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wrap-passage-text-last > p {
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
