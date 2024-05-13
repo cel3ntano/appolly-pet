@@ -227,3 +227,17 @@
     margin-bottom: 6px;
   }
 }
+
+@media (max-width: 375px) {
+  .hero-blueborder {
+    width: 268px;
+  }
+
+  .hero-info {
+    width: 268px;
+  }
+
+  .hero-info-title {
+    font-size: 22px;
+  }
+}

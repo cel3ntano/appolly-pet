@@ -1,7 +1,7 @@
 .scroll-up {
   position: fixed;
-  bottom: 50px;
-  right: 150px;
+  bottom: 20px;
+  right: 20px;
   background-color: #5956e9;
   border: 1px solid white;
   color: white;
@@ -12,7 +12,7 @@
   text-align: center;
   cursor: pointer;
   line-height: 28px;
-  z-index: 1;
+  z-index: 2;
   user-select: none;
   transform: scale(1);
   animation: pulse 3s infinite;
@@ -216,6 +216,11 @@
 /* !-------------------- tablet ----------------- */
 
 @media (min-width: 768px) {
+  .scroll-up {
+    bottom: 30px;
+    right: 30px;
+  }
+
   .header {
     max-width: 768px;
   }
@@ -360,6 +365,12 @@
 /* !-------------------- desktop ----------------- */
 
 @media screen and (min-width: 1280px) {
+  .scroll-up {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
+
   .header {
     max-width: 1440px;
   }
@@ -434,5 +445,23 @@
 
   .header-logo {
     left: 485px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    max-width: 320px;
+  }
+  .header-nav {
+    width: 288px;
+    gap: 175px;
+  }
+
+  .header-logo {
+    left: 96px;
+  }
+
+  .backdrop-menu {
+    width: 288px;
   }
 }
