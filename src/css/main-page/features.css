@@ -1,6 +1,6 @@
 .features .container {
   background: #5956e9;
-  background-image: url(/images/app-features/app-features-background-mob.jpg);
+  background-image: url(/img/app-features/app-features-background-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,7 +10,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .features .container {
-    background-image: url(/images/app-features/app-features-background-mob@2x.jpg);
+    background-image: url(/img/app-features/app-features-background-mob@2x.jpg);
   }
 }
 
