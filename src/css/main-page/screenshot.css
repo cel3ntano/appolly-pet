@@ -1,3 +1,37 @@
+/* ============================ backdrop ========================= */
+.backdrop {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  color: rgb(192, 192, 192);
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(46, 47, 66, 0.804);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.under-dev p {
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* ============================ backdrop ========================= */
+
 .screenshot {
   /* background-color: rgb(79, 79, 79); */
   position: relative;
@@ -26,100 +60,6 @@
   display: none;
 }
 
-.app-interface-slider {
-  width: 100%;
-  /* text-align: center; */
-}
-
-.app-interface-slide-container {
-  display: flex;
-  align-items: center;
-  margin: 0 auto 40px;
-  /* height: 622px; */
-  /* max-width: 1066px; */
-  /* position: relative; */
-}
-
-.app-interface-slide-container img {
-  width: 100%;
-  height: 100%;
-}
-
-.slider-item {
-  /* height: 622px; */
-  /* width: 319px; */
-  /* opacity: 0; */
-  /* position: absolute; */
-  /* transition: all 0.3s ease-in-out; */
-  /* z-index: 0; */
-  /* border-radius: 10px; */
-  background-size: contain;
-}
-
-/* .slider-item-1 {
-  left: 15%;
-  opacity: 0.4;
-  transform: translateX(-50%);
-} */
-
-/* .slider-item-2,
-.slider-item-4 {
-  width: 246px;
-  height: 532px;
-  opacity: 0.8;
-  z-index: 1;
-} */
-
-/* .slider-item-2 {
-  left: 30%;
-  transform: translateX(-50%);
-} */
-
-/* .slider-item-3 {
-  width: 319px;
-  height: 622px;
-  opacity: 1;
-  transform: translateX(-50%);
-  z-index: 2;
-} */
-
-/* .slider-item-4 {
-  left: 70%;
-  transform: translateX(-50%);
-} */
-
-/* .slider-item-5 {
-  left: 85%;
-  opacity: 0.4;
-  transform: translateX(-50%);
-} */
-
-/* .app-interface-slide-container img {
-  margin: 0 auto;
-} */
-
-.app-interface-slider-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
-.app-interface-slider-dot {
-  height: 16px;
-  width: 16px;
-  border-radius: 50px;
-  background-color: #5956e9;
-}
-
-.app-interface-slider-dot.active {
-  height: 16px;
-  width: 16px;
-  border-radius: 50px;
-  background-color: #5956e9;
-  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #5956e9;
-}
-
 /* ===================== MEDIA ============================ */
 
 @media screen and (min-width: 768px) {
@@ -145,29 +85,50 @@
   }
 }
 
-.backdrop {
-  color: rgb(192, 192, 192);
-  font-size: 30px;
+/* =================== slider ========================= */
+
+.app-interface-slider {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background: rgba(46, 47, 66, 0.804);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.under-dev {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  /* outline: 3px solid rgb(80, 255, 71); */
 }
 
-.under-dev p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+.app-interface-slides-container {
+  outline: 3px solid rgb(71, 157, 255);
+
+  display: flex;
+  align-items: center;
+  margin: 0 auto 40px;
+  /* height: 622px; */
+  /* position: relative; */
 }
+
+.app-interface-slides-container img {
+  outline: 2px solid rgb(255, 234, 3);
+  width: 100%;
+  height: 100%;
+}
+
+.app-interface-slider-dots {
+  outline: 1px solid tomato;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.app-interface-slider-dot {
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background-color: #5956e9;
+}
+
+.app-interface-slider-dot.active {
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background-color: #5956e9;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #5956e9;
+}
+/* =================== slider ========================= */
