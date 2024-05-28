@@ -88,24 +88,29 @@
 /* =================== slider ========================= */
 
 .app-interface-slider {
-  width: 100%;
-  /* outline: 3px solid rgb(80, 255, 71); */
+  /* width: 100%; */
+  outline: 2px solid rgb(80, 255, 71);
 }
 
-.app-interface-slides-container {
-  outline: 3px solid rgb(71, 157, 255);
-
-  display: flex;
-  align-items: center;
+.app-interface-slider-gallery {
+  outline: 3px solid rgb(249, 105, 15);
+  /* display: flex; */
+  /* align-items: center; */
   margin: 0 auto 40px;
   /* height: 622px; */
   /* position: relative; */
 }
 
-.app-interface-slides-container img {
+.app-interface-slide {
+  width: 246px;
+  margin: 0 auto;
+}
+
+.app-interface-slider-gallery img {
   outline: 2px solid rgb(255, 234, 3);
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  /* width: 100%; */
+  /* height: 100%; */
 }
 
 .app-interface-slider-dots {
@@ -117,18 +122,28 @@
   gap: 16px;
 }
 
-.app-interface-slider-dot {
+/* .app-interface-slider-dot {
   height: 16px;
   width: 16px;
   border-radius: 50px;
   background-color: #5956e9;
-}
+} */
 
-.app-interface-slider-dot.active {
+/* .app-interface-slider-dot.active {
   height: 16px;
   width: 16px;
   border-radius: 50px;
   background-color: #5956e9;
   box-shadow: 0 0 0 3px #fff, 0 0 0 4px #5956e9;
-}
+} */
 /* =================== slider ========================= */
+.swiper {
+  /* width: 246px; */
+  /* height: 532px; */
+  /* width: 246px; */
+  /* height: 532px; */
+}
+
+.swiper-slide {
+  /* width: fit-content; */
+}
