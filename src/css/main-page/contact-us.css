@@ -1,3 +1,64 @@
 .contact-us {
   background-color: rgb(255, 255, 192);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1170px;
+  height: 230px;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 65px 50px;
+}
+
+.contact-us-address {
+  /* display: flex; */
+}
+
+.contact-us-address-list {
+  position: absolute;
+  display: flex;
+}
+
+.contact-us-address-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 120px;
+}
+
+.contact-us-svg-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #5956e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 18px;
+}
+
+.contact-us-address-link {
+  color: #232233;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.contact-us-decorative-strip {
+  position: relative;
+  width: 4px;
+  height: 117px;
+  background-color: #6c6c72;
+  margin-right: 50px;
 }
