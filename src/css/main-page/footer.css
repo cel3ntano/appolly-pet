@@ -1,3 +1,25 @@
 .footer {
-  background-color: rgb(200, 192, 255);
+  background-color: #232233;
+  height: 542px;
+  padding: 232px 135px 18px 135px;
+}
+
+.footer-logo-svg {
+  display: block;
+  width: 120px;
+  height: 32px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.footer-text {
+  width: 334px;
+  height: 72px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
 }
