@@ -1,14 +1,9 @@
 .recent-blog {
-  background-color: rgb(192, 255, 193);
-}
-
-span {
-  color: red;
-}
-
-.recent-blog {
   background-color: #ffffff;
-  padding: 60px 0 210px 0;
+}
+
+.recent-blog .container {
+  padding-bottom: 235px;
 }
 
 .recent-blog-title {
@@ -34,10 +29,15 @@ span {
 
 .recent-blog-item {
   max-width: 343px;
-  margin-bottom: 40px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 375px) {
+  .recent-blog-item {
+    margin-bottom: 40px;
+  }
 }
 
 .recent-blog-img-container {
@@ -92,7 +92,7 @@ span {
 
 @media screen and (min-width: 768px) {
   .recent-blog {
-    padding: 120px 0 195px 0;
+    /* padding: 120px 0 195px 0; */
   }
 
   .recent-blog-title {
@@ -116,7 +116,7 @@ span {
   }
 
   .recent-blog-item {
-    width: 213px;
+    max-width: 213px;
   }
 
   .recent-blog-container {
@@ -132,7 +132,7 @@ span {
 
 @media screen and (min-width: 1440px) {
   .recent-blog {
-    padding: 120px 0 248px 0;
+    /* padding: 120px 0 248px 0; */
   }
   .recent-blog-title {
     margin-bottom: 23px;
@@ -152,11 +152,11 @@ span {
   }
 
   .recent-blog-item {
-    width: 370px;
+    max-width: 370px;
   }
 
   .recent-blog-container {
-    padding: 40px 4px 36px 6px;
+    padding: 40px 18px 36px;
   }
 
   .recent-blog-subtitle {

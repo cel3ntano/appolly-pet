@@ -6,6 +6,7 @@
 
 .footer-container {
   display: flex;
+  justify-content: center;
 }
 
 .footer-soc-info {
@@ -140,13 +141,14 @@
 
 .footer-line-bottom {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   width: 1167px;
   height: 1px;
   background-color: #fff;
-  margin-top: auto;
-  margin-bottom: 18px;
+  /* margin-top: auto; */
+  /* margin-bottom: 18px; */
+  margin: 0 auto 18px;
 }
 
 .footer-container-copyright {

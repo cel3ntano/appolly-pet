@@ -1,13 +1,13 @@
 .contact-us {
-  background-color: rgb(255, 255, 192);
-  position: absolute;
+  /* background-color: rgb(255, 255, 192); */
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contact-us-container {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -16,6 +16,7 @@
   border-radius: 30px;
   background-color: #fff;
   padding: 65px 50px;
+  filter: drop-shadow(0px 10px 100px rgba(0, 0, 0, 0.24));
 }
 
 .contact-us-address {
