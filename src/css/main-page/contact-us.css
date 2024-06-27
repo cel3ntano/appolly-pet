@@ -142,3 +142,15 @@
     margin-right: 50px;
   }
 }
+
+/*===================*/
+
+@media screen and (max-width: 375px) {
+  .contact-us-container {
+    width: 280px;
+  }
+
+  .contact-us-address-link {
+    font-size: 17px;
+  }
+}

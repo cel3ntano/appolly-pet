@@ -347,3 +347,34 @@
     margin: 0 auto 18px;
   }
 }
+
+/*===================*/
+
+@media screen and (max-width: 375px) {
+  .footer-text {
+    width: 280px;
+    font-size: 14px;
+  }
+
+  .footer-subscribe-text {
+    width: 280px;
+    font-size: 14px;
+  }
+
+  .footer-form {
+    width: 280px;
+  }
+
+  .footer-line-bottom {
+    width: 280px;
+  }
+
+  .footer-container-copyright {
+    width: 280px;
+    gap: 12px;
+  }
+
+  .footer-copyright-text {
+    font-size: 11px;
+  }
+}
